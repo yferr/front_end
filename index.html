@@ -14,14 +14,19 @@
            -->
           <p>Please provide your credentials:</p>
           <label for="username">Username:</label>
-          <input type="text" id="username" name="username" required minlength="4" maxlength="50" size="50">
+          <input type="text" id="username" name="username" required minlength="4" maxlength="50" size="50" value="admin">
           <br>
           <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required minlength="4" maxlength="50" size="50">
+          <input type="password" id="password" name="password" required minlength="4" maxlength="50" size="50" value="admin">
+          <br>
+          <label for="result">Result:</label>
+          <input type="text" id="result" name="result">
+           <p id="message">Message: </p>
           <br><br>
           <div class="form-login-button-container">
             <button id="button-login">Login</button>
             <button id="button-logout">Logout</button>
+            <button id="button-test">Test</button>
           </div>
         </form>
 

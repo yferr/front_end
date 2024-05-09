@@ -2,8 +2,9 @@ import './style.css';
 import {Map, View} from 'ol';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
-import {getHelloWord} from './js/login'
+
 import { registerEvents } from './js/registerEvents';
+//import { enlazaEventos } from './js2/enlazaEventos';
 
 const map = new Map({
   target: 'map',
@@ -19,4 +20,3 @@ const map = new Map({
 });
 
 registerEvents();
-getHelloWord();

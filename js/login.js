@@ -1,7 +1,11 @@
 import axios from 'axios';
 
-export function getHelloWord(){
-    axios.get('http://localhost:8000/appdesweb/hello_world/')
+export function login(){
+    var username=document.getElementById('username').value;
+    var password=document.getElementById('password').value;
+
+    axios.post('http://localhost:8000/appdesweb/app_login/',
+            {username:username,password:password})
         .then(function (response) {
         // handle success
                 console.log(response);
