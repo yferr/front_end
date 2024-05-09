@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web develop</title>
+  </head>
+  <body>
+    <div class="container-exterior">
+      <div class="container-interior">
+        <form id="form-login" onsubmit="event.preventDefault();">
+          <!-- Prevent default avoids the form be sent on pressing a form button
+          This is necessary because we want on click a button
+           -->
+          <p>Please provide your credentials:</p>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required minlength="4" maxlength="50" size="50">
+          <br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="4" maxlength="50" size="50">
+          <br><br>
+          <div class="form-login-button-container">
+            <button id="button-login">Login</button>
+            <button id="button-logout">Logout</button>
+          </div>
+        </form>
+
+        <hr>
+        <div id="map"></div>
+        <p>Probando</p>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
