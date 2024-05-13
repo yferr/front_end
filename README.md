@@ -6,7 +6,7 @@
 
 ### Instructions
 
-To use this repo you need
+To use this repo you need:
 - Install nvm
 - Install node 20.11.0
 - Start the Django API: https://github.com/joamona/gescont-djdesweb-alone
