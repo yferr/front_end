@@ -1,18 +1,27 @@
-# OpenLayers + Vite
+#Master in Geomatics and Geoinformation. <a href="https://upv.es" target="blank">Universitat Politècnica de València</a>
 
-This example demonstrates how the `ol` package can be used with [Vite](https://vitejs.dev/).
+##Web Develop and Geoportals subject
 
-To get started, run the following (requires Node 14+):
+###Example of geoportal made with <a href="https://openlayers.org/" target="_blank">OpenLayers</a>, <a href="https://vitejs.dev/">Vite</a> and <a href="https://axios-http.com/" target="_blank">Axios</a>
 
-    npx create-ol-app my-app --template vite
+###Instructions
 
-Then change into your new `my-app` directory and start a development server (available at http://localhost:5173):
+To use this repo you need
+- Install nvm
+- Install node 20.11.0
+- Start the Django API: https://github.com/joamona/gescont-djdesweb-alone
 
-    cd my-app
+    git clone https://github.com/joamona/desweb-front-end.git
+    cd desweb-front-end
     npm start
 
-To generate a build ready for production:
+To visit the web you need to disable the Chrome web security, to avoid CORS checks.
 
-    npm run build
+    google-chrome --disable-web-security --user-data-dir="[/home/joamona/chrome]"
 
-Then deploy the contents of the `dist` directory to your server.  You can also run `npm run serve` to serve the results of the `dist` directory for preview.
+Visit the web page:
+
+     http://localhost:5173/
+     
+
+# OpenLayers + Vite
