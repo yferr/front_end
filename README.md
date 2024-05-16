@@ -18,6 +18,7 @@ To use this repo you need:
 To visit the web you need to disable the Chrome web security, to avoid CORS checks.
 
     google-chrome --disable-web-security --user-data-dir="[/home/joamona/chrome]"
+    google-chrome --disable-web-security --user-data-dir="[/home/vagrant/chrome]"
 
 Visit the web page:
 
