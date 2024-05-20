@@ -16,6 +16,7 @@ export function login(){
             .catch(function (error) {
                 // handle error
                 console.log(error);
+                document.getElementById("form-login-message").innerHTML=error.message;
             })
             .finally(function () {
                 // always executed

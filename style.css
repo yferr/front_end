@@ -26,13 +26,13 @@ html, body {
 /**************************/
 /*Set the container width according the screen size of the client*/
 /*Less than 5000px of screen with, the width of the container is 800px*/
-@media (max-width:5000px){.container-interior {width: 1600px;background-color: aqua;}}
+/*@media (max-width:5000px){.container-interior {width: 1600px;background-color: aqua;}}*/
 /*Less than 1800px of screen with, the width of the container is 1400px*/
-@media (max-width:1800px){.container-interior {width: 1200px;background-color: rgb(0, 255, 76);}}
+/*@media (max-width:1800px){.container-interior {width: 1200px;background-color: rgb(0, 255, 76);}}*/
 /*Less than 900px of screen with, the width of the container is 600px*/
-@media (max-width:1200px){.container-interior {width: 1000px;background-color: rgb(0, 132, 255);}}
+/*@media (max-width:1200px){.container-interior {width: 1000px;background-color: rgb(0, 132, 255);}}*/
 /*Less than  900px of screen with, the width of the container is 600px*/
-@media (max-width:900px){.container-interior {width: 600px;background-color: rgb(255, 238, 0);}}
+/*@media (max-width:900px){.container-interior {width: 600px;background-color: rgb(255, 238, 0);}}*/
 
 .container-interior{
   display: flex;

@@ -37,15 +37,18 @@
           form button
           This is necessary because we want on click a button
           -->
-          Gid:
-          <input type="text" id="form-buildings-gid" name = "form-buildings-gid">
+          Gid: <br>
+          <input type="text" id="form-buildings-gid" name = "form-buildings-gid"> <br>
           Description<br>
           <textarea rows="5" cols="100" id="form-buildings-descripcion" name="descripcion">Descripcion</textarea><br>
+          Area<br>
+          <!--Disabled because the area is going to be calculated by the database-->
+          <input type="text" id="form-buildings-area" name="form-buildings-area" disabled><br>
           Geometry WKT<br>
           <textarea rows="5" cols="100" id="form-buildings-geomWkt" name="geomWkt">polygon((0 0, 1 0, 1 1, 0 1, 0 0))
           </textarea>
           <br>
-          <p id="form-building-message">Message: </p>
+          <p id="form-buildings-message">Message: </p>
           <div class="form-login-button-container">
             <button id="form-building-insert">Insert</button>
             <button id="form-building-update">Update</button>
