@@ -1,0 +1,9 @@
+2024/11/27-20:20:46.145 4 Reusing MANIFEST /home/vagrant/node/front-end/[/home/vagrant/chrome]/Default/Local Storage/leveldb/MANIFEST-000001
+2024/11/27-20:20:46.164 4 Recovering log #10
+2024/11/27-20:20:46.181 4 Reusing old log /home/vagrant/node/front-end/[/home/vagrant/chrome]/Default/Local Storage/leveldb/000010.log 
+2024/11/27-21:18:31.720 4 Level-0 table #14: started
+2024/11/27-21:18:31.744 4 Level-0 table #14: 12531 bytes OK
+2024/11/27-21:18:31.755 4 Delete type=0 #10
+2024/11/27-22:25:46.457 4 Level-0 table #16: started
+2024/11/27-22:25:46.510 4 Level-0 table #16: 12258 bytes OK
+2024/11/27-22:25:46.520 4 Delete type=0 #13

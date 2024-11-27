@@ -9,15 +9,14 @@
 To use this repo you need:
 - Install nvm
 - Install node 20.11.0
-- Start the Django API: https://github.com/joamona/gescont-djdesweb-alone
+- Start the Django API: 
 
     git clone https://github.com/joamona/desweb-front-end.git
-    cd desweb-front-end
+    cd front-end
     npm start
 
 To visit the web you need to disable the Chrome web security, to avoid CORS checks.
 
-    google-chrome --disable-web-security --user-data-dir="[/home/joamona/chrome]"
     google-chrome --disable-web-security --user-data-dir="[/home/vagrant/chrome]"
 
 Visit the web page:

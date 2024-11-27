@@ -4,62 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web develop</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="all.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   </head>
   <body>
     <div class="container-exterior">
-      <div class="container-interior">
-        <form id="form-login" onsubmit="event.preventDefault();">
-          <!-- Prevent default avoids the form be sent on pressing a form button
-          This is necessary because we want on click a button
-           -->
-          <p>Please provide your credentials:</p>
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" required minlength="4" maxlength="50" size="50" value="admin">
-          <br>
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required minlength="4" maxlength="50" size="50" value="admin">
-          <br>
-          <label for="result">Result:</label>
-          <input type="text" id="result" name="result">
-           <p id="message">Message: </p>
-          <br><br>
-          <p id="form-login-message">Message: </p>
-          <div class="form-login-button-container">
-            <button id="button-login">Login</button>
-            <button id="button-logout">Logout</button>
-            <button id="button-test">Test</button>
-          </div>
-        </form>
-        <hr>
+      <div class="container-login">
+        <div class="container-interior-forms">
+          <!-- Imagen de bienvenida -->
+          <img src="./Untitled.jpeg" alt="Bienvenida" id="login-image" />
+          <form id="form-login" onsubmit="event.preventDefault();">
+            <p>Please provide your credentials:</p>
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+              minlength="4"
+              maxlength="50"
+              size="50"
+              value="admin"
+            />
+            <br />
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              minlength="4"
+              maxlength="50"
+              size="50"
+              value="admin"
+            />
+            <br />
+            <p id="form-login-message">Message: </p>
+            <div class="form-login-button-container">
+              <button id="button-login">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
 
-        <form id="form-buildings" onsubmit="event.preventDefault();">
-          <!-- Prevent default avoids the form be sent on pressing a
-          form button
-          This is necessary because we want on click a button
-          -->
-          Gid: <br>
-          <input type="text" id="form-buildings-gid" name = "form-buildings-gid"> <br>
-          Description<br>
-          <textarea rows="5" cols="100" id="form-buildings-descripcion" name="descripcion">Descripcion</textarea><br>
-          Area<br>
-          <!--Disabled because the area is going to be calculated by the database-->
-          <input type="text" id="form-buildings-area" name="form-buildings-area" disabled><br>
-          Geometry WKT<br>
-          <textarea rows="5" cols="100" id="form-buildings-geomWkt" name="geomWkt">polygon((0 0, 1 0, 1 1, 0 1, 0 0))
-          </textarea>
-          <br>
-          <p id="form-buildings-message">Message: </p>
-          <div class="form-login-button-container">
-            <button id="form-building-insert">Insert</button>
-            <button id="form-building-update">Update</button>
-            <button id="form-building-delete">Delete</button>
-            <button id="form-building-select">Select</button>
-          </div>
-        </form>
+      <!-- Mapa y Logout, oculto inicialmente -->
+      <div id="map-container" class="container-interior-map" style="display:none;">
+        <!-- Header con usuario y botón logout -->
+        <div id="header">
+          <span id="user-info"></span>
+          <button id="button-logout">Logout</button>
+        </div>
+
         <div id="map"></div>
-        <p>Probando</p>
+        <div id="legend" class="legend">
+          <h3>Layer Legend</h3>
+          <div id="legend-content"></div>
+        </div>
+        <div id="menu-polygon" class="menu-polygon">
+          <!-- <i class="fa-solid fa-arrows-to-dot" onclick="mapMain.centerMap();"></i>
+          <i class="fa-solid fa-draw-polygon" onclick="mapMain.startDrawing();"></i>
+          <i class="fa-solid fa-xmark" onclick="mapMain.stopDrawing();"></i>
+          <i class="fa-solid fa-eraser" onclick="mapMain.erasePolygon();"></i>
+          <i class="fa-solid fa-floppy-disk" onclick="mapMain.downloadPolygon();"></i> -->
+          <i class="fa-solid fa-arrows-to-dot"></i>
+          <i class="fa-solid fa-draw-polygon" id="start-drawing" ></i>
+          <i class="fa-solid fa-eraser" id="erase-layer"></i>
+          <i class="fa-solid fa-floppy-disk" id="download-polygon"></i>
+        </div>
+        <div id=geometry>
+          <textarea rows="1" cols="60" id="geomWkt" name="geomWkt"></textarea></div>
       </div>
     </div>
+    <!--<div>
+      <p id="toast" style="display: none;"></p>
+    </div>-->
     <script type="module" src="./main.js"></script>
   </body>
 </html>
