@@ -9,7 +9,7 @@
     "publish-on-local": "vite build --base=http://localhost/fff/ && rm -R /var/www/html/fff && cp -R dist /var/www/html/fff"
   },
   "devDependencies": {
-    "vite": "^5.2.11"
+    "vite": "^6.0.5"
   },
   "dependencies": {
     "axios": "^1.7.2",
